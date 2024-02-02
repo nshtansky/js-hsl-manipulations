@@ -1,0 +1,22 @@
+{
+  "targets": {
+    "debug": {
+      "outFile": "debug.wasm",
+      "textFile": "debug.wat",
+      "sourceMap": true,
+      "debug": true
+    },
+    "release": {
+      "outFile": "web.wasm",
+      "textFile": "web.wat",
+      "sourceMap": false,
+      "optimizeLevel": 3,
+      "shrinkLevel": 0,
+      "converge": false,
+      "noAssert": false
+    }
+  },
+  "options": {
+    "bindings": "raw"
+  }
+}
